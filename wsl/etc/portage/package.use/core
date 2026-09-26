@@ -1,0 +1,2 @@
+# setting appropriate video cards for pulling correct drivers
+*/* VIDEO_CARDS: d3d12
