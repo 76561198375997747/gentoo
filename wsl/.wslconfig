@@ -1,0 +1,33 @@
+[wsl2]
+# amount of ram allocated to wsl 2; uses the specified value or 50% of available ram, whichever is lower
+memory=8GB
+ 
+# number of virtual processors allocated to wsl 2
+# See: windows system information > system summary > processor
+# note: should not exceed half of total ram to avoid oom errors during compilation
+processors=4
+ 
+# swap space allocated to wsl 2 (default: 25% of total ram); set to 0 to disable
+swap=2GB
+ 
+# release unused memory pages back to windows (default: true)
+pageReporting=true
+ 
+# automatically reclaim unused disk space in the wsl 2 virtual disk (default: false)
+sparseVhd=true
+ 
+# mirrored networking mode: wsl 2 shares the host network interface (requires windows 11 22h2 or later)
+# replaces localhostforwarding, which is superseded by this option
+networkingMode=mirrored
+ 
+# route dns queries through the windows host; recommended with mirrored networking (default: false)
+dnsTunneling=true
+ 
+# enforce windows firewall rules on wsl 2 traffic; recommended with mirrored networking (default: false)
+firewall=true
+ 
+# enable wslg: support for graphical linux applications via x11 and wayland (default: true)
+guiApplications=true
+ 
+# additional kernel command line parameters (default: none)
+# kernelCommandLine=
