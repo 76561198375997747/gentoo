@@ -30,4 +30,4 @@ firewall=true
 guiApplications=true
  
 # additional kernel command line parameters (default: none)
-# kernelCommandLine=
+kernelCommandLine = systemd.firstboot=0
